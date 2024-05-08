@@ -1,4 +1,4 @@
-import math
+from math import gcd
 
 #taking input from user
 p = int(input('Input a prime number as p: '))
@@ -42,7 +42,7 @@ print(f'n = {n} and phi_n = {phi_n}')
 
 #calculating public key (e)
 for i in range(2, phi_n):
-    if math.gcd(i, phi_n) == 1:
+    if gcd(i, phi_n) == 1:
         e = i
         break
 
