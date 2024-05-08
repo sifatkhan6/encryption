@@ -1,9 +1,6 @@
 p = int(input('Input a prime number as p: '))
 q = int(input('Input a prime number as q: '))
 
-n = p*q
-phi_n = (p-1) * (q-1)
-
 def check_prime():
     global p
     global q
@@ -30,3 +27,7 @@ check_prime()
 
 print(f'{p} and {q} is prime number')
 
+n = p * q
+phi_n = (p-1) * (q-1)
+
+print(f'n = {n} and phi_n = {phi_n}')
